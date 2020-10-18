@@ -18,3 +18,5 @@ I notice several things with the API.
      d. I could pass in an invalid email format, c_jung.yahoo in Create_A_Json_Post_With_Comments.
 
 4. No payload has to be passed to create a post or a post comment. 
+
+5. No pagination functionality in the API. ex. GET /items?limit=20&offset=100 so you can implement paging in an application
