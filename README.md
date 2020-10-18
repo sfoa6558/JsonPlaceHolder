@@ -1,7 +1,6 @@
 # JsonPlaceHolder
      Criteria to Implement
-The only criteria I did not implement was the log/html report. I used the Visual Studio IDE to create the API tests along with the Nunit library among others. The debugging functionality in that 
-environment was enough for me to debug any issues with the project. 
+The only criteria I did not implement was the log/html report. I used the Visual Studio IDE to create the API tests along with the Nunit library among others. The debugging functionality in that environment has always been enough to resolve issues. I usually configure tests in Team City and results are sent in email.  
 
       Architectural issues
 I notice several things with the API. 
