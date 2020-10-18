@@ -13,7 +13,7 @@ I notice several things with the API.
   
      b. I could pass in a negative integer for userId ex. -10 with no error message
  
-     c. I could pass in string user id which was then turned into a 0 with no error message.
+     c. I could pass in string user id which was then turned into a 0 with no error message when I checked the response. 
   
      d. I could pass in an invalid email format, c_jung.yahoo in Create_A_Json_Post_With_Comments.
 
