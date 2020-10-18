@@ -6,7 +6,7 @@ The only criteria I did not implement was the log/html report. I used the Visual
 I notice several things with the API. 
 
 1. No Authentication - no token, no API Key, no security
-2. There did not seem to be any required fields in the payloads. Ex. the For Create_A_JSON_Post API Test, I could create a post without body,title
+2. There did not seem to be any required fields in the payloads. Ex. For the Create_A_JSON_Post API Test, I could create a post without body,title
 3. No validation on the fields
 
      a. I could pass characters such as '@#$^&*?<>|:+-=!()' into the payloads
