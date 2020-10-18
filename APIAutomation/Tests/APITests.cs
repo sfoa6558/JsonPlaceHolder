@@ -107,7 +107,7 @@ namespace JsonPlaceHolder
         [TestCase("", "c_jung@yahoo.com", "body", TestName = "Check if name is required")]
         [TestCase("name", "c_jung@yahoo.com", "", TestName = "Check if comments body is required")]
         [TestCase("name", "", "body", TestName = "Check if email is required")]
-        [TestCase("name", "c_jung@yahoo", "body", TestName = "Check if invalid email format is accepted")]
+        [TestCase("name", "c_jung.yahoo", "body", TestName = "Check if invalid email format is accepted")]
         [TestCase("name", "c_jung@yahoo.com", "@#$^&*?<>|:+-=!()", TestName = "Check if characters are allowed")]
         public void Create_A_Json_Post_With_Comments(string name, string email, string body)
         {
