@@ -20,3 +20,5 @@ I notice several things with the API.
 4. No payload has to be passed to create a post or a post comment. 
 
 5. No pagination functionality in the API. ex. GET /items?limit=20&offset=100 so you can implement paging in an application
+
+
