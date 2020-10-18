@@ -157,6 +157,21 @@ namespace JsonPlaceHolder
         }
 
         [Test]
+        public void Verify_Json_Header()
+        {
+            using (var scope = new TestScope())
+            {
+                request = new Helper().CreateComplexRequest(new RestRequest("/posts", Method.POST), new JsonPlaceHolderPostModel(5, "title", "body"));
+                response = scope.client.Execute(request);
+                Assert.That(response.ContentType, Is.EqualTo("application/json; charset=utf-8"));
+
+
+
+            }
+        }
+
+
+        [Test]
         public void Create_A_Json_Post_With_Comments_And_No_Payload()
         {
             using (var scope = new TestScope())
@@ -221,21 +236,6 @@ namespace JsonPlaceHolder
                
             }
         }
-
-        [Test]
-        public void Verify_Json_Header()
-        {
-            using (var scope = new TestScope())
-            {
-                request = new Helper().CreateComplexRequest(new RestRequest("/posts", Method.POST), new JsonPlaceHolderPostModel(5, "title", "body"));
-                response = scope.client.Execute(request);
-                Assert.That(response.ContentType, Is.EqualTo("application/json; charset=utf-8"));
-
-
-
-            }
-        }
-
 
     }
 
